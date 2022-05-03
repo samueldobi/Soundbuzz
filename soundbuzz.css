@@ -39,7 +39,7 @@ h1{
 .search input[type="text"]
 {
 	border: 0px;
-	width: 100%;
+	width: 80%;
 	padding: 10px 10px;
     background-color: transparent;
 }
