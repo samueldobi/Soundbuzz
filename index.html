@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css"  href="soundbuzz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SoundBuzz</title>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Soundbuzz</h1>
+        <div class="playbox">
+
+            <div class="search-wrap">
+            <div class="search">
+				<form class="search-form">
+					<input type="text" placeholder="Search for  music..">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+        </div> 
+
+        <div class="music-body">
+            <div class="image-holder">
+                <img src="images/ayra-starr.jpg" alt="">
+            </div>
+
+            <div class="track-holder">
+
+                <div class="track-name">
+                    <p id="track">
+                       <strong> Arya Star ft Ckay - Beggie Beggie </strong> 
+                    </p>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="bar">
+                        <input type="range" min="0" max="100" value="0" class="slider">
+                    </div>
+                </div>
+
+                <div class="track-bar">
+                    <i class="fa-solid fa-backward" id="prevbar"></i>
+                    <i class="fa-solid fa-play" id="playbar"> </i>
+                    <i class="fa-solid fa-pause" id="pausebar"></i>  
+                    <i class="fa-solid fa-forward" id="fowardbar"></i>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+        <div class="track-source">
+            <audio src="assets/Ayra_Starr_Ft_Ckay_-_Beggie_Beggie_360media.com.ng.mp3" id="0"></audio>
+            <audio src="assets/Glass_Animals_Ft_iann_dior_-_Heat_Waves_360media.com.ng.mp3" id="1"></audio>
+            <audio src="assets/Juice_WRLD_-_Already_Dead_360media.com.ng.mp3" id="2"></audio>
+            <audio src="assets/Kayode_-_Live_Forever_360media.com.ng.mp3" id="3"></audio>
+            <audio src="assets/Rema_-_Calm_Down_medianub.com.mp3" id="4"></audio>
+            <audio src="assets/The_Kid_LAROI_Ft_Justin_Bieber_-_Stay_360media.com.ng.mp3" id="5"></audio>
+            <audio src="assets/WizKid_Ft_Justin_Bieber_Tems_-_Essence_360media.com.ng.mp3" id="6"></audio>
+        </div>
+    </div>
+
+    <div class="image-box">
+        <img src="images/ayra-starr.jpg" alt="" id="a">
+        <img src="images/glass.jpg" alt="" id="b">
+        <img src="images/juice.jpg" alt="" id="c">
+        <img src="images/kayode.jpg" alt="" id="d">
+        <img src="images/kid-laroi.jpg" alt="" id="e">
+        <img src="images/rema.jpg" alt="" id="f">
+        <img src="images/wiz.jpg" alt="" id="g">
+    </div>
+    
+    <div class="tracklist">
+        <p id="">Ayra_Starr_Ft_Ckay_-_Beggie_Beggie</p>
+        <p id="">Glass_Animals_Ft_iann_dior_-_Heat_Waves</p>
+        <p id="">Juice_WRLD_-_Already_Dead</p>
+        <p id="">Kayode_-_Live_Forever</p>
+        <p id="">Rema_-_Calm_Down</p>
+        <p id="">The_Kid_LAROI_Ft_Justin_Bieber</p>
+        <p id="">WizKid_Ft_Justin_Bieber_Tems_-_Essence</p>
+    </div>
+
+
+   <!-- <p id="try"><button>click</button></p>  
+        <p id="count">+</p>  -->
+       
+
+    <script src="soundbuzz.js"></script>
+</body>
+</html>
