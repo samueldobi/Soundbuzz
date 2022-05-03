@@ -39,7 +39,7 @@ h1{
 .search input[type="text"]
 {
 	border: 0px;
-	width: 80%;
+	width: 67%;
 	padding: 10px 10px;
     background-color: transparent;
 }
@@ -133,7 +133,7 @@ button{
 	
 	.search
 	{
-		width: 100%;
+		width: 80%;
 		margin: 0 auto;
 	}
 
