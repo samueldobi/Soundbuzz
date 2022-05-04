@@ -55,12 +55,12 @@ h1{
 	background: none;
 	background-color: #5579c6;
 	color: #fff;
-	float: right;
+	/* float: left; */
 	padding: 10px;
-	-moz-border-radius-top-right: 5px;
-	-webkit-border-radius-top-right: 5px;
+	/* -moz-border-radius-top-right: 5px;
+	-webkit-border-radius-top-right: 5px; 
 	-moz-border-radius-bottom-right: 5px;
-	-webkit-border-radius-bottom-right: 5px;
+	-webkit-border-radius-bottom-right: 5px; */
         cursor:pointer;
 }
 .music-body{
@@ -125,7 +125,7 @@ button{
 
 
 /* ===========================
-   ====== Medua Query for Search Box ====== 
+   ====== Media Query for Search Box ====== 
    =========================== */
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
