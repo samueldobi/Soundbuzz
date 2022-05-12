@@ -42,15 +42,15 @@ const tracks = [
   },
 ]
 
+// Create the audio element for the player
+//  let aud = document.createElement('audio');
+
 
 // functions
 // load the track into the DOM
-
-
- function loadTrack(aud){
-   aud.src = tracks[trackIndex].songPath;
-  // aud.load();
-  // aud.src = tracks[trackIndex].songPath;
+ function loadTrack(){
+  let aud = tracks[trackIndex].songPath;
+ aud.load();
  }
 
 let trackIndex = 0;
@@ -58,11 +58,10 @@ let trackIndex = 0;
 // for previous songs
 function prevTrack(){
   let aud = tracks[trackIndex].songPath;
-  // loadTrack()
-  trackIndex--
-  if (trackIndex < 0){
-    trackIndex = tracks.length -1;
-  }
+  if (trackIndex > 0)
+  trackIndex -= 1;
+ else trackIndex = tracks.length - 1;
+
 }
 prevBtn.addEventListener('click', prevTrack);
 
@@ -73,7 +72,6 @@ function playTrack(){
   aud.play();
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
-  loadTrack(tracks[trackIndex])
 }
 playBtn.addEventListener('click', playTrack);
 
@@ -88,14 +86,11 @@ pauseBtn.addEventListener('click', pauseTrack);
 
 // for the next song button
 function nextTrack(){
-  trackIndex++
-  if (trackIndex > tracks.length -1 ) {
-    trackIndex = 0;
-  }
+  if (trackIndex < tracks.length - 1)
+  trackIndex += 1;
+else trackIndex = 0;
 
 }
 fowardBtn.addEventListener('click', nextTrack);
 
-// loadTrack(trackIndex);
-// let aud = tracks[trackIndex].songPath;
-loadTrack(tracks[trackIndex])
+
